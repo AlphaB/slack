@@ -13,8 +13,9 @@ var SLACK_API string = "https://slack.com/api/"
 var SLACK_WEB_API_FORMAT string = "https://%s.slack.com/api/users.admin.%s?t=%s"
 
 type SlackResponse struct {
-	Ok    bool   `json:"ok"`
-	Error string `json:"error"`
+	Ok      bool   `json:"ok"`
+	Warning string `json:"warning"`
+	Error   string `json:"error"`
 }
 
 type AuthTestResponse struct {
